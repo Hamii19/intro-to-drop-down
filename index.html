@@ -2,45 +2,78 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clone Landing Page | HTML Best Practices</title>
 </head>
 <body>
-  <nav><img src="images/logo.svg">
+  <nav class="nav__bar">
+    <div class="nav__left--side">
+      <figure class="logo__wrapper">
+        <img src="./assets/logo.svg" alt="Snap Logo" class="logo">
+      </figure>
+      <ul class="nav__links">
+        <li class="nav__link">
+          <a href="" class="nav__link--anchor">Features</a>
+        </li>
+        <li class="nav__link">
+          <a href="" class="nav__link--anchor">Company</a>
+        </li>
+        <li class="nav__link">
+          <a href="" class="nav__link--anchor">Careers</a>
+        </li>
+        <li class="nav__link">
+          <a href="" class="nav__link--anchor">About</a>
+        </li>
+      </ul>
+    </div>
+    <div class="nav__right--side">
+      <ul class="nav__links">
+        <li class="nav__link">
+          <a href="" class="nav__link--anchor">Login</a>
+        </li>
+        <li class="nav__link">
+          <a href="" class="
+          nav__link--anchor
+          nav__link--anchor--special">Register</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-  <a>Features</a>
-  <a>Company</a>
-  <a>Careers</a>
-  <a>About</a>
-
-  <a>Login</a>
-  <a>Register</a>
-</nav>
-
-  <h1>Make remote work</h1>
-
-  <p>Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.</p>
-
-  <button>Learn more</button>
-  <img src="images/client-audiophile.svg">
-  <img src="images/client-databiz.svg">
-  <img src="images/client-maker.svg">
-  <img src="images/client-meet.svg">
-  <img src="images/image-hero-desktop.png">
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <section id="hero">
+    <div class="container">
+      <div class="row">
+        <header class="header">
+          <div class="header__left--side">
+            <h1 class="header__title">Make remote work</h1>
+            <p class="header__para">
+              Get your team in sync. no matter your location. Streamline processes, create team rituals, and watch productivity soar.
+            </p>
+            <a href="" class="header__btn">Learn more</a>
+            <div class="clients">
+              <figure class="client__logo--wrapper">
+                <img src="./assets/client-databiz.svg" alt="Databiz Logo" class="client__logo">
+              </figure>
+              <figure class="client__logo--wrapper">
+                <img src="./assets/client-audiophile.svg" alt="Audiophile Logo" class="client__logo">
+              </figure>
+              <figure class="client__logo--wrapper">
+                <img src="./assets/client-meet.svg" alt="Meet Logo" class="client__logo">
+              </figure>
+              <figure class="client__logo--wrapper">
+                <img src="./assets/client-maker.svg" alt="Maker Logo" class="client__logo">
+              </figure>
+            </div>
+          </div>
+          <div class="header__right--side">
+            <figure class="header__img--wrapper">
+              <img src="./assets/image-hero-desktop.png" alt="Header Hero Image" class="header__img">
+            </figure>
+          </div>
+        </header>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
